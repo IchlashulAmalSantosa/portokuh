@@ -22,20 +22,20 @@ export function Navbar() {
   return (
     <header
       className={cn(
-        'sticky top-0 z-50 w-full transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] flex justify-center',
+        'sticky top-0 z-50 w-full transition-all duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)] flex justify-center',
         scrolled ? 'pt-3 px-3 sm:pt-4 sm:px-4' : 'pt-0 px-0'
       )}
     >
       <nav
         className={cn(
           'flex items-center justify-between border backdrop-blur-xl backdrop-saturate-150',
-          'transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)]',
+          'transition-[max-width,padding,background-color,border-color,box-shadow,gap] duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)]',
           scrolled
             ? 'w-auto max-w-[calc(100vw-1.5rem)] rounded-full border-white/20 dark:border-white/10 bg-background-soft/40 px-3.5 sm:px-6 py-2 shadow-[0_8px_32px_0_rgba(0,0,0,0.12),inset_0_1px_1px_0_rgba(255,255,255,0.4)]'
-            : 'w-full rounded-none border-x-transparent border-t-transparent border-b-border/30 bg-backgroundsoft/30 px-4 sm:px-8 py-3.5 shadow-none'
+            : 'w-full max-w-full rounded-none border-x-transparent border-t-transparent border-b-border/30 bg-background-soft/30 px-4 sm:px-8 py-3.5 shadow-none'
         )}
       >
-        {/* Container Nama - Alignment Presisi dengan flex items-center */}
+        {/* Container Nama */}
         <div
           className={cn(
             'grid transition-all duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)] items-center overflow-hidden shrink-0',
@@ -52,7 +52,7 @@ export function Navbar() {
               href="/#home"
               className="font-mono text-xs sm:text-sm font-semibold tracking-tight text-foreground transition-colors hover:text-accent leading-none inline-flex items-center"
             >
-              <span className="inline sm:hidden">☆✮✮✮☆</span>
+              <span className="inline sm:hidden">IAS</span>
               <span className="hidden sm:inline">{profile.name}</span>
             </Link>
           </div>
