@@ -43,6 +43,9 @@ export interface ProjectSolutionStep {
   description: string;
 }
 
+// Alias export agar kompatibel dengan komponen SolutionSteps.tsx
+export type SolutionStep = ProjectSolutionStep;
+
 export interface ProjectVisualization {
   title: string;
   caption: string;
